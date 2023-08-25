@@ -1,12 +1,14 @@
 body{
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex-direction: column;
     display: flex;
     align-items: center;
     height: 100vh;
     justify-content: center;
     background: url(https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80);
-
+    background-size: cover;
+    overflow: hidden;
 }
 
 h2{
@@ -14,6 +16,7 @@ h2{
     letter-spacing:4px;
     font-size:14px;
     text-align: center;
+    color: white;
 }
 
 .clock{
@@ -22,6 +25,7 @@ h2{
 }
 .clock div{
     margin:5px;
+    position: relative;
 }
 
 .clock span{
@@ -31,5 +35,30 @@ h2{
     opacity: .8;
     color:white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+
+
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: .8;
+
+}
+
+.clock #ampm{
+    bottom: 0;
+    position:absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
 
 }
