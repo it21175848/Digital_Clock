@@ -2,21 +2,24 @@ body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex-direction: column;
-    display: flex;
+    display:flex;
     align-items: center;
     height: 100vh;
     justify-content: center;
     background: url(https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80);
-    background-size: cover;
+    background-size: 700px;
     overflow: hidden;
 }
 
 h2{
     text-transform:uppercase;
     letter-spacing:4px;
-    font-size:14px;
+    font-size:20px;
     text-align: center;
-    color: white;
+    color: blue;
+    border-left-color: white;
+    animation:forwards;
+
 }
 
 .clock{
@@ -54,10 +57,10 @@ h2{
 }
 
 .clock #ampm{
-    bottom: 0;
+    bottom: 10s;
     position:absolute;
     width: 60px;
-    height: 30px;
+    height: 40px;
     font-size: 20px;
     background: green;
 
