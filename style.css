@@ -65,3 +65,28 @@ h2{
     background: green;
 
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .word {
+    font-size: 36px;
+    color: #333;
+    animation: scaleAnimation 2s infinite alternate;
+  }
+  
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
