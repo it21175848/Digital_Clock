@@ -29,3 +29,8 @@ function updateClock(){
 }
 
 updateClock()
+
+// Add an alert box
+setTimeout(() => {
+    alert("Hello! This is an alert.");
+}, 5000); // This will show the alert after 5 seconds
