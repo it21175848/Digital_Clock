@@ -89,4 +89,19 @@ body {
       transform: scale(1.2);
     }
   }
-  
+
+  #ampm {
+    /* Your initial styles */
+    color: red;
+    font-weight: bold;
+    opacity: 0; /* Start with zero opacity (hidden) */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with zero opacity */
+    }
+    100% {
+        opacity: 1; /* End with full opacity */
+              }
