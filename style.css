@@ -1,107 +1,114 @@
-body{
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex-direction: column;
-    display:flex;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    background: url(https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80);
-    background-size: 700px;
-    overflow: hidden;
-}
-
-h2{
-    text-transform:uppercase;
-    letter-spacing:4px;
-    font-size:20px;
-    text-align: center;
-    color: blue;
-    border-left-color: white;
-    animation:forwards;
-
-}
-
-.clock{
-    display:flex;
-
-}
-.clock div{
-    margin:5px;
-    position: relative;
-}
-
-.clock span{
-    width: 100px;
-    height: 80px;
-    background: slateblue;
-    opacity: .8;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-
-
-}
-
-.clock .text{
-    height: 30px;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background: darkblue;
-    opacity: .8;
-
-}
-
-.clock #ampm{
-    bottom: 10s;
-    position:absolute;
-    width: 60px;
-    height: 40px;
-    font-size: 20px;
-    background: green;
-
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .word {
-    font-size: 36px;
-    color: #333;
-    animation: scaleAnimation 2s infinite alternate;
-  }
-  
-  @keyframes scaleAnimation {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.2);
-    }
-  }
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url(https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80);
+  background-size: 700px;
+  overflow: hidden;
+}
 
-  #ampm {
-    /* Your initial styles */
-    color: red;
-    font-weight: bold;
-    opacity: 0; /* Start with zero opacity (hidden) */
-    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+  border-left-color: white;
+  animation: forwards;
+}
+
+.clock {
+  display: flex;
+}
+
+.clock div {
+  margin: 5px;
+  position: relative;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background: slateblue;
+  opacity: .8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: darkblue;
+  opacity: .8;
+}
+
+.clock #ampm {
+  bottom: 10s;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  font-size: 20px;
+  background: green;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.word {
+  font-size: 36px;
+  color: #333;
+  animation: scaleAnimation 2s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.2);
+  }
+}
+
+#ampm {
+  /* Your initial styles */
+  color: red;
+  font-weight: bold;
+  opacity: 0; /* Start with zero opacity (hidden) */
+  animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0; /* Start with zero opacity */
-    }
-    100% {
-        opacity: 1; /* End with full opacity */
-              }
+  0% {
+      opacity: 0; /* Start with zero opacity */
+  }
+  100% {
+      opacity: 1; /* End with full opacity */
+  }
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.Save {
+  animation: fadeInOut 2s infinite;
+  font-size: 10;
+}
